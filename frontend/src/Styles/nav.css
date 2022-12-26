@@ -1,0 +1,109 @@
+.nav {
+  /* background: #ffffff; */
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  z-index: 12;
+  font-size: 2vh;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+  font-size: inherit;
+}
+
+.right-nav {
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: right;
+  margin-right: 24px;
+  font-size: inherit;
+  width: 35vh;
+}
+
+.small-nav {
+  display: none;
+  float: right;
+  align-items: center;
+  justify-content: right;
+  margin-right: 24px;
+  font-size: inherit;
+  width: 40vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .left-nav {
+    display: none;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .small-nav{
+    display: flex;
+  }
+}
+
+.nav-btn {
+  border-radius: 25px;
+  background: #0a0a0a;
+  font-weight: bold;
+  font-size: inherit;
+  color: #fff;
+  padding: 10px 22px;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  margin-left: 24px;
+}
+
+.nav-btn:hover {
+  transition: all 0.2s ease-in-out;
+  background: rgb(255, 255, 255);
+  color: #080808;
+}
+
+.act-title {
+  display: flex;
+  align-items: center;
+  padding-left:3vh;
+}
+
+.animate-title{
+  background-image: linear-gradient(
+      -225deg,
+      #004044 0%,
+      #000000 29%,
+      #888786 67%,
+      #dad7d5 100%
+  );
+  font-size: 4vh;
+  align-content: right;
+  /* padding-right: 1220px; */
+  /* padding-top: 10px; */
+  background-size: contain;
+  background-clip: border-box;
+  background-size: 50% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
+/* .new-venue-btn {
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+  padding-bottom: 20px;;
+} */

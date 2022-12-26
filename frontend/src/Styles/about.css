@@ -1,0 +1,26 @@
+.about-container{
+    padding-top: 2vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title{
+    padding: 20px;
+    border-radius: 20px;
+    border: black solid 4px;
+    font-size: 50px;
+    color: rgb(10, 10, 10);
+    /* background-color: rgb(230, 230, 230); */
+}
+
+.about-text-container{
+    max-width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    /* background-color: rgb(230, 230, 230); */
+}
+
+.about-text{
+    font-size: large;
+}

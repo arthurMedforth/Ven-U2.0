@@ -1,0 +1,219 @@
+.flex-container{
+    width: 100%; 
+    background-size: 100%;
+    background-position-y: bottom;
+}
+
+
+.summary-container{
+   background-image: url("../Resources/lakota1.jpg");
+   object-fit:cover;
+   height: 2800px;
+
+   /* object-position:100%;  */
+   z-index: 0;
+   /* filter:brightness(0.5); */
+}
+
+
+.summary-header{    
+    opacity: 1;
+    filter:brightness(2);
+    height: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 150px;
+    text-align: center;
+    color: rgb(243, 134, 10);
+    z-index: 100;   
+    position: relative;
+    top: 1%;
+}
+
+.venue-name{
+    font-family:'Lalezar';
+    filter:brightness(5);
+    font-style: italic;
+    font-size: 500px;
+    color: rgb(248, 248, 248);
+    padding-left: 45px;
+    top: 1%;
+}
+
+.venue-address{
+    color: rgb(229, 69, 238);
+    font-family: 'Lalezar';
+    font-weight: bolder;
+    font-size: 110px;
+    position: relative;
+    top:-290px;
+}
+
+/* .venue-postcode{
+    color: rgb(223, 32, 32);
+    font-size: 75px;
+} */
+
+.venue-capacity{
+    color: rgb(241, 0, 0);
+    font-size: 160px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    z-index: 100;
+    top: -350px;
+    z-index: 100;
+
+}
+
+.venue-email{
+    background-color: black;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 700px;
+    border-radius:80px ;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 100;
+    
+}
+
+.venue-description{
+    background-color:black ;
+    width: 1700px;
+    margin: auto;
+    position: relative;
+    border-radius: 80px;
+    background-size:cover;
+    color:  rgb(255, 255, 255) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    top: 650px;
+    z-index: 100;
+}
+
+.venue-start-date{
+    color: rgb(241, 225, 8);
+    font-size:150px;
+    font-family: Lalezar;
+    position: relative;
+    text-align: center;
+    top: -150px;
+}
+
+
+/* .venue-end-date{
+    color: rgb(223, 32, 32);
+    font-size: 300px;
+} */
+
+.summary-footer{
+    color: blueviolet;
+    /* background-color: black; */
+}
+
+.edit-venue{
+  border-radius: 80px;
+  background-color: black;
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: 500px;
+  width: 500px;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+  
+  
+}
+
+.delete-venue{
+    border-radius: 80px;
+    background-color: black;
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 500px;
+    left:100px;
+    width: 500px;
+    color: rgb(255, 255, 255);
+    z-index: 100; 
+  }
+
+.event-notification-container{
+  
+    background-color:rgb(232, 23, 23);
+    color: black;
+    font-size: xx-large;
+}
+
+/* .event-header{
+    background-color:rgb(243, 134, 10);
+} */
+
+.event_artist{
+    color: rgb(249, 244, 244);
+    font-size: 85px;
+    font-family: 'Lalezar';
+}
+
+.event_name{
+    color: rgb(249, 249, 249);
+    font-size: 55px;
+    font-family: 'Lalezar';
+}
+
+.event_date{
+    color: rgb(247, 245, 245);
+    font-size: 55px;
+    font-family: 'Lalezar';
+}
+
+.event_capacity{
+    color: rgb(247, 243, 243);
+    font-size: 55px;
+    font-family: 'Lalezar';
+}
+
+.accept-button{
+    border-radius: 80px;
+    border-color: rgb(45, 175, 9) ;
+    background-color: rgb(45, 175, 9);
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    left: -30px;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    z-index: 100; 
+}
+
+.reject-button{
+    border-radius: 80px;
+    border-color: rgb(175, 28, 9) ;
+    background-color:rgb(175, 28, 9);
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    left: 30px;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    z-index: 100; 
+}
+.event-body{
+    background-color:rgb(13, 13, 13);;
+}

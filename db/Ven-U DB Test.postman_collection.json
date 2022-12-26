@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "ab1d821b-adc9-4e6f-bed5-1cac504b6f69",
+		"name": "Ven-U DB Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getVenues",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be json\", () => {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"pm.test(\"Response to contain correct field names\", () => {\r",
+							"    pm.expect(pm.response.text()).to.include(\"venue_id\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"venue_name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"street_address\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"city\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"postcode\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"capacity\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"from_date\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"end_date\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"img_url\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/venues/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venues",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVenueById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be json\", () => {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"pm.test(\"Response to contain correct field names\", () => {\r",
+							"    pm.expect(pm.response.text()).to.include(\"venue_id\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"venue_name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"street_address\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"city\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"postcode\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"capacity\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"from_date\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"end_date\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"img_url\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/venues/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venues",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createVenue",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be status\", () => {\r",
+							"    pm.response.to.be.status;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"venue_name\":\"Arena 3\",\r\n    \"street_address\":\"54 Venyoo road\",\r\n    \"city\":\"Manchester\",\r\n    \"postcode\":\"M160HE\", \r\n    \"capacity\":5215, \r\n    \"from_date\":\"2025-01-01\", \r\n    \"end_date\":\"2026-01-01\", \r\n    \"img_url\":\"https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/venues",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateVenue",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be json\", () => {\r",
+							"    pm.response.to.be.status;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"venue_name\":\"Arena 42\",\r\n    \"street_address\":\"22 Adams road\",\r\n    \"city\":\"Cambridge\",\r\n    \"postcode\":\"CB10SE\", \r\n    \"capacity\":4242, \r\n    \"from_date\":\"2025-01-01\", \r\n    \"end_date\":\"2026-01-01\", \r\n    \"img_url\":\"https://static.wikia.nocookie.net/freshprince/images/a/ac/1carlton.jpg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/venues/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venues",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteVenue",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be json\", () => {\r",
+							"    pm.response.to.be.status;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"venue_name\":\"Arena 3\",\r\n    \"street_address\":\"54 Venyoo road\",\r\n    \"city\":\"Manchester\",\r\n    \"postcode\":\"M160HE\", \r\n    \"capacity\":5215 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/venues/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venues",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVenueOwners",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be json\", () => {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"pm.test(\"Response to contain correct field names\", () => {\r",
+							"    pm.expect(pm.response.text()).to.include(\"venue_owner_id\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"owner_name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"phone_number\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"email\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/venue-owners/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venue-owners",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVenueOwnerById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be json\", () => {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"pm.test(\"Response to contain correct field names\", () => {\r",
+							"    pm.expect(pm.response.text()).to.include(\"venue_owner_id\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"owner_name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"phone_number\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"email\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/venue-owners/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venue-owners",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createVenueOwner",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"Response to be status\", () => {\r",
+							"    pm.response.to.be.status;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"owner_name\":\"John\",\"phone_number\":\"+447497548566\",\"email\":\"johnjohn@yahoomail.co.uk\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/venue-owners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venue-owners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateVenueOwner",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be status\", () => {\r",
+							"    pm.response.to.be.status;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"owner_name\":\"Billy\",\"phone_number\":\"+447457548566\",\"email\":\"billy@yahoomail.co.uk\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/venue-owners/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venue-owners",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteVenueOwner",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code to be 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response to be status\", () => {\r",
+							"    pm.response.to.be.status;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"owner_name\":\"John\",\"phone_number\":\"+447497548566\",\"email\":\"johnjohn@yahoomail.co.uk\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/venue-owners/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venue-owners",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

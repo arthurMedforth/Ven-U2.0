@@ -1,0 +1,27 @@
+.Summary {
+    overflow: hidden;
+}
+
+.profile-title {
+    font-weight: bold;
+    width: 300px;
+    float: left;
+}
+.profile {
+    border: 5px solid rgb(15, 1, 1);
+}
+
+pr {
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+}
+
+.my-cards {
+    align-items: center;
+}
+
+.cards {
+    overflow: hidden;
+}
+

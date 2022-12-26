@@ -1,0 +1,27 @@
+.footer-container {
+    /* background: rgb(0, 0, 0);  */
+    width: 100%;
+    padding: 3vh 0vh;
+    /* color: rgb(255, 255, 255); */
+    text-align: center;
+    margin-top: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+.footer-nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 5vh;
+    border-bottom: black solid 1px;
+  }
+  
+.footer-text{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0vh 6vh;
+    /* padding: 10px; */
+  }

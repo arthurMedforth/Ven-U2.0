@@ -1,0 +1,141 @@
+.form {
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+textarea,
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(22, 22, 22);
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+textarea,
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(22, 22, 22);
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+/* p {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Helvetica;
+
+    color: rgba(0, 0, 0, 0.733);
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-wrap: wrap;
+} */
+
+input[type=checkbox] {
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.label {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px 5px;
+
+    display: inline-flex;
+    width: 150px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+
+    font-size: medium;
+    font-family: Helvetica;
+    font-weight: bold;
+
+    background-color: rgb(236, 239, 240);
+}
+
+label {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: rgb(24, 4, 4);
+    font-size: x-large;
+    font-weight: 200;
+}
+
+label1 {
+    line-height: 2;
+    text-align: center;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: rgb(24, 4, 4);
+    font-size: x-large;
+    font-weight: 200;
+}
+
+.select {
+    position: relative;
+    font-size: medium;
+    width: 100px;
+}
+
+.form-submit-btn {
+    border-radius: 20px;
+    background: #fe7700;
+    color: #fff;
+    padding: 10px 22px;
+    font-size: 20px;
+    font-weight: 200px;
+    letter-spacing: 1px;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    margin-top: 20px;
+    display: inline-block;
+    appearance: none;
+    border-radius: 4px;
+    width: 300px;
+    align-items: center;
+}
+
+.form-submit-btn:hover {
+    transition: all 0.2s ease-in-out;
+    background: rgb(255, 255, 255);
+    color: #fe7700;
+}
+
+alert {
+    color: #fe7700;
+    text-align: left;
+    display: block;
+}
+
+alert::before {
+    display: inline;
+    content: "⚠ ";
+}
+

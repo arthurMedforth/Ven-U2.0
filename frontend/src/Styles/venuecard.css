@@ -1,0 +1,137 @@
+.card-container{
+    background-color: rgb(223, 219, 219);
+    border-radius: 10px;
+    border: rgb(255, 255, 255) solid 1vh;
+    /* width: 400px; */
+    height: 50vh;
+    position: relative;
+    border-radius: 30px;
+    width: 80%;
+    margin: 5vh 0vh 5vh 25vh;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    color: black;
+
+}
+
+.card-container:hover{
+    background-color: rgb(66, 66, 64);
+    color: white;
+}
+
+/* @media screen and (max-width: 1800px) {
+    .card-container {
+        flex: 25%;
+        margin: 5vh;
+    }
+} */
+
+/* @media screen and (max-width: 1300px) {
+    .card-container {
+        flex: 30%;
+        margin: 10vh;
+    }
+} */
+
+/* @media screen and (max-width: 1000px) {
+    .card-container {
+        flex: 80%;
+        flex-direction: column;
+        margin: 10vh;
+    }
+} */
+
+.card-heading{
+    /* font-family: ; */
+    opacity:0.8;
+    padding-top: 0px;
+    padding-left: 2vh;
+    font-size: 6vh;
+    color:  #ffffff;
+    background-color: rgb(128, 0, 0);
+    border: rgb(10, 10, 10) 1px;
+    /* padding: 2px; */
+}
+
+
+.card-body{
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+
+.location-text{
+    font-size: 38px; 
+    font-style: italic;
+    font-weight: bolder, 900;
+    text-align: end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(200, 33, 33);
+    /* position: absolute; */
+    /* bottom: 305px; */
+    z-index: 100;
+}
+
+
+.image-styles{
+    /* z-index: 1; */
+    /* opacity: 0.8; */
+    border-radius: 25px;
+    height: 50vh;
+    width: 40vh;
+    /* width: 400px;
+    height: 500px;
+    padding-right: 80px; */
+    position: absolute;
+    right:0px;
+    top:0px; 
+}
+
+#venue-name {
+    color:inherit;
+    font-family: 'Lalezar', 'Times New Roman' ;
+    padding-bottom:20px;
+    padding-left: 18px;
+    z-index: 100;
+    font-weight: bold;
+    font-size: 65px;
+    position: absolute;
+    top: 10px;
+    left:20px;
+}
+
+.capacity-text{
+    color: inherit;
+    text-align: right;
+    /* z-index: 100; */
+    font-weight: bold;
+    font-size: 4vh;
+    font-family: monospace;
+    /* position: absolute;
+    bottom: 270px;
+    padding-left: 0; */
+    /* padding-top: 15px; */
+}
+
+
+.card-footer{
+    /* padding-top:180px; */
+    /* z-index: 99; */
+    position: absolute;
+    bottom: 0px;
+    left: 4vh;
+    /* background-color: green; */
+}
+
+/* @font-face {
+    font-family: 'Lalezar-Regular';
+    src: local('Lalezar-Regular'), url( "../Resources/Lalezar-Regular.ttf";), format('ttf')
+} */
+
+.venue-cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* min-height: 100vh; */
+    padding: 10vh;
+}

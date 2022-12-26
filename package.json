@@ -1,0 +1,20 @@
+{
+  "name": "ven-u2.0",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000V\u0000e\u0000n\u0000-\u0000U\u00002\u0000.\u00000\u0000\r\u0000 \u0000",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/School-Of-Tech-Futures-ATC/Ven-U2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/School-Of-Tech-Futures-ATC/Ven-U2.0/issues"
+  },
+  "homepage": "https://github.com/School-Of-Tech-Futures-ATC/Ven-U2.0#readme"
+}
